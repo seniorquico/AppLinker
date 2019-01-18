@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BrowscapNet" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\browscap.ini.gz" />
+    <EmbeddedResource Include="Data\full_asp_browscap.ini.gz" />
+    <EmbeddedResource Include="Data\lite_asp_browscap.ini.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppLinker.Api\AppLinker.Api.csproj" />
+  </ItemGroup>
+
+</Project>
